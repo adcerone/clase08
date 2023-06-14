@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100px;
+    width: 150px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.container div {
+    border: 2px solid black;
+}
+
+.container div.itemA {
+    border-right: none;
+    background-color: aquamarine;
+    height: 1fr; 
+    grid-row: 1 / span 2;
+}
+
+.container div.itemB {
+    border-bottom: 1px solid black;
+}
+
+.container div.itemC {
+    border-top: 1px solid black;
+}
